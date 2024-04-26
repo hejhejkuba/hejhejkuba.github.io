@@ -1,0 +1,32 @@
+#image-track {
+  display: flex;
+  gap: 4vmin;
+  margin: 400px 10%;
+  width: 100vw;
+  transform: translate(0%, -50%); 
+  user-select: none; /* -- Prevent image highlighting -- */
+}
+
+#image-track > .image {
+  width: 40vmin;
+  height: 56vmin;
+  object-fit: cover;
+  object-position: 100% center;
+  color: white;
+}
+#image-track > .image-text {
+  position: absolute;
+  width: 40vmin;
+  height: 56vmin;
+  object-fit: cover;
+  object-position: 100% center;
+  color: white;
+}
+#image-track > .image-first{
+  width: 40vmin;
+  height: 56vmin;
+  object-fit: cover;
+  object-position: 100% center;
+  color: white;
+  opacity: 0.0;
+}

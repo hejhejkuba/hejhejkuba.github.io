@@ -1,0 +1,16 @@
+
+.contact{
+display: flex;
+color: black;
+background-color: #ddd0b1;
+align-items: center;
+justify-content: center;
+padding: 10px;
+
+gap: 4vmin;
+}
+.contact > img{
+width: 40px;
+height: 40px;
+object-position: 100% center;
+}
