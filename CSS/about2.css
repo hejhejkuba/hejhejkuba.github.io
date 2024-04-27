@@ -1,0 +1,13 @@
+.about2{
+  color: black;
+  display: flex;
+  margin: 40px 10%;
+  align-items: stretch;
+  gap: 1vw;
+  font-size: 1.2rem;
+  flex-direction: column;
+  padding: 20px;
+}
+.about2 > img {
+	border-radius: 20px;
+}
