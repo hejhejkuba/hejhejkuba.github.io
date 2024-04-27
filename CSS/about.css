@@ -11,7 +11,7 @@
 .about > .right {
   width: 50%;
   flex-grow: 1;
-  background-color: #ddd0b1;
+  #background-color: #ddd0b1;
   border-radius: 20px;
 }
 .about > .left{

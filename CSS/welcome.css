@@ -6,8 +6,15 @@
 	width: 100vw;
 	opacity: 0.5;
 }
-.welcome-part > .welcome-text {
+.welcome-part > .welcome-text{
 	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+.welcome-part > .welcome-button {
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
