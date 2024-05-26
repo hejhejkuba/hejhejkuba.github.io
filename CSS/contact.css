@@ -1,16 +1,40 @@
 
-.contact{
-display: flex;
-color: black;
-background-color: #ddd0b1;
-align-items: center;
-justify-content: center;
-padding: 10px;
-
-gap: 4vmin;
+.contact {
+    display: flex;
+    justify-content: center; /* Wyśrodkowanie poziome elementów */
+    align-items: center; /* Wyśrodkowanie pionowe elementów */
+    gap: 20px; /* Odstęp między elementami */
+    flex-wrap: wrap; /* Umożliwia zawijanie elementów w pionie */
+	background-color: #ddd0b1;
+	color: gray;
+	text-decoration: normal;
+	
 }
-.contact > img{
-width: 40px;
-height: 40px;
-object-position: 100% center;
+
+.contact div {
+    margin: 10px;
+    text-align: center;
+}
+
+.contact h3 {
+    margin: 0;
+	text-align: center;
+	
+}
+.contact a:link{
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+}
+
+@media screen and (max-width: 600px) {
+    .contact {
+        flex-direction: column; /* Zmiana układu na pionowy */
+        align-items: flex-start; /* Wyrównanie elementów do lewej */
+    }
+
+    .contact div {
+        width: 100%; /* Zapewnienie pełnej szerokości */
+        text-align: left; /* Wyrównanie tekstu do lewej */
+    }
 }

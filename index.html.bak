@@ -3,11 +3,14 @@
 	<head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+	<link rel="stylesheet" href="CSS/style.css">	
+	<link rel="stylesheet" href="CSS/logo.css">
 	<link rel="stylesheet" href="CSS/menu.css">
 	<link rel="stylesheet" href="CSS/services.css">
 	<link rel="stylesheet" href="CSS/about.css">
-	<link rel="stylesheet" href="CSS/style.css">
+	
 	<link rel="stylesheet" href="CSS/contact.css">
 	<link rel="stylesheet" href="CSS/welcome.css">
 	<link rel="stylesheet" href="CSS/gallery.css">
@@ -18,32 +21,49 @@
 	</head>
 	<body>
 		<script src="JS/gallery2.js"></script>
-		<header class="nav-menu">
+		<div class="logo">
 		<img src="Images/Icons/plan.png">
-		<a href="#" class="logo">Doman Interiores</label>
-		<nav class="navbar">
-			<a href="#">Home</a>
-			<a href="#">About</a>
-			<a href="#">Gallery</a>
-			<a href="#">Contact</a>
-		</nav>
-		</header>
+		<h1 class="active">Doman Interiores</h1>
+		</div>
+		<div class="topnav" id="myTopnav">
+			<a href="#home" >Home</a>
+			<a href="#news">News</a>
+			<a href="#contact">Contact</a>
+			<a href="#about">About</a>
+			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+				<i class="fa fa-bars"></i>
+			</a>
+		</div>
+		<script>
+				function myFunction() {
+				  var x = document.getElementById("myTopnav");
+				  if (x.className === "topnav") {
+					x.className += " responsive";
+				  } else {
+					x.className = "topnav";
+				  }
+				}
+		</script>
 		<div class="contact">
-		<img src="Images/Icons/plan.png">
-		<h3>Contact : jakub01lit@3213.com</h3>
-		<h3>Email : 133 333 333</h3>
+			<div class="contact-email">
+				<h3><a href="mailto:doman.interiores@gmail.com">doman.interiores@gmail.com</a></h3>
+			</div>
+			<div class="contact-phone">
+				<h3><a href="tel: 111111111">725 493 813</a></h3>
+			</div>
+		
 		</div>
 		<div class="welcome-part">
 				<img src="Images/Gallery/1.jpg">
 				<div class="welcome-text">
-				<h1>Transform your space today</h1>
-				<h3>Create your personal space with unique interior desing </h3>
+				<h1>Zmień swoje otoczenie już dzisiaj z Doman Interiores</h1>
+				<h3>Stwórz swoje unikalne wnętrze z nami</h3>
 				</div>
-				<button class="welcome-button">Explore</button>
 		</div>
+		<div class="about-wrapper">
 		<div class="about">
 			<div class="left">
-			<h1>Nasza Firma</h1>
+			<h1>O nas</h1>
 			<br>
 			<p>Nasza firma to miejsce, gdzie pasja spotyka się z profesjonalizmem. Jesteśmy zespołem doświadczonych dekoratorów wnętrz, dla których każdy projekt to wyjątkowa podróż w świat estetyki i funkcjonalności. Z nami Twój dom stanie się miejscem, które odzwierciedla Twoje marzenia i style życia. Nasza filozofia opiera się na indywidualnym podejściu do każdego klienta, dbając o to, aby każdy detal był perfekcyjnie dopasowany do Twoich potrzeb i preferencji. Dążymy do tego, aby nasze projekty przekraczały oczekiwania, tworząc niepowtarzalne przestrzenie, w których możesz cieszyć się komfortem i pięknem każdego dnia.</p>
 			</div>
@@ -51,17 +71,13 @@
 				<img src="Images/Gallery/7.jpg">
 			</div>
 		</div>
-		<div class="about2">
-		<h1>Pozwól nam zmienić twoją rzeczywistość</h1>
-		<p>Nasze bogate doświadczenie w projektowaniu wnętrz jest fundamentem naszej działalności. Z dumą możemy powiedzieć, że przez lata zdobyliśmy nie tylko wiedzę, ale również umiejętności niezbędne do stworzenia wyjątkowych i funkcjonalnych przestrzeni. Współpracujemy jedynie z najlepszymi wykonawcami i dostawcami, którym możemy zaufać, dzięki czemu gwarantujemy wysoką jakość wykonania oraz satysfakcję naszych klientów. Nasze indywidualne podejście do każdego projektu pozwala nam na dokładne zrozumienie Twoich oczekiwań oraz stworzenie spersonalizowanych rozwiązań, które idealnie odpowiadają Twoim potrzebom i stylowi życia. Tworzymy przestrzenie, które nie tylko zachwycają swoją estetyką, ale również spełniają wszystkie funkcjonalne wymagania, stając się miejscem, w którym chcesz przebywać każdego dnia.</p>
-		<img src="Images/Gallery/7.jpg">
 		</div>
 		<div class="about">
 			<div class="right">
 				<img src="Images/Gallery/7.jpg">
 			</div>
 			<div class="left">
-			<h1>Jak pracujemy</h1>
+			<h1>Dlaczego My?</h1>
 			<br>
 			<p>Nasz proces pracy opiera się na starannie zaplanowanej i zorganizowanej strategii, która zapewnia naszym klientom spokój i pewność, że ich wizje zostaną zrealizowane zgodnie z oczekiwaniami. Rozpoczynamy od szczegółowych konsultacji, podczas których starannie słuchamy Twoich potrzeb, preferencji i inspiracji. Następnie tworzymy spersonalizowany plan projektowy, uwzględniając Twój styl życia oraz funkcjonalne wymagania pomieszczeń. Nasz zespół dba o każdy etap procesu, od projektowania po finalne wykończenie, zapewniając wysoką jakość i doskonałe wykonanie. Naszym celem jest stworzenie dla Ciebie przestrzeni, w której poczujesz się naprawdę domowo i komfortowo, jednocześnie zachwycając się jej estetyką i funkcjonalnością.</p>
 			</div>
@@ -81,7 +97,7 @@
 						</div>
 						<div class="card-content">
 							<h2 class="name">Usługi projektowe</h2>
-							<p class="description">Specjalizujemy się w dostarczaniu kompleksowych usług projektowych, które skupiają się na tworzeniu unikatowych i funkcjonalnych przestrzeni. Nasz zespół doświadczonych projektantów wnętrz zapewnia profesjonalne wsparcie na każdym etapie procesu projektowego. Dzięki naszym usługom projektowym możemy pomóc Ci w realizacji Twoich marzeń o idealnym wnętrzu, dopasowanym do Twoich indywidualnych potrzeb i gustów</p>
+							<p class="description">Dostarczamy wysokiej jakości usługi projektowe, skupiając się na tworzeniu spersonalizowanych koncepcji i planów aranżacji wnętrz. Nasz doświadczony zespół projektantów zapewnia profesjonalne wsparcie na każdym etapie procesu projektowego, pomagając klientom w realizacji ich wizji i potrzeb.</p>
 						</div>
 					</div>
 					<div class="card">
