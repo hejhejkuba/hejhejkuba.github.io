@@ -3,47 +3,57 @@
 	<head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	
+	<link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
 	<link rel="stylesheet" href="CSS/style.css">	
 	<link rel="stylesheet" href="CSS/logo.css">
 	<link rel="stylesheet" href="CSS/menu.css">
 	<link rel="stylesheet" href="CSS/services.css">
 	<link rel="stylesheet" href="CSS/about.css">
-	
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 	<link rel="stylesheet" href="CSS/contact.css">
 	<link rel="stylesheet" href="CSS/welcome.css">
 	<link rel="stylesheet" href="CSS/gallery.css">
 	<link rel="stylesheet" href="CSS/social-media.css">
 	<link rel="stylesheet" href="CSS/gallery2.css">
 	<link rel="stylesheet" href="CSS/about2.css">
+	<link rel="stylesheet" href="CSS/about-me.css">
+	<link rel="stylesheet" href="CSS/why-us.css">
 	
 	</head>
 	<body>
 		<script src="JS/gallery2.js"></script>
-		<div class="logo">
-		<img src="Images/Icons/plan.png">
-		<h1 class="active">Doman Interiores</h1>
+	
+	<header>
+
+		<nav>
+			<h1>Doman Interiores</h1>
+
+			<div class="menu">
+				<a href="#">Home</a>
+				<a href="#">About</a>
+				<a href="#">Discord</a>
+				<a href="#">Contact</a>
+			</div>
+
+			<button class="hamburger">
+				<span class="material-icons">menu</span>
+			</button>
+		</nav>
+
+		<div class="mobile-menu">
+			<a href="#">Home</a>
+			<a href="#">About</a>
+			<a href="#">Discord</a>
+			<a href="#">Contact</a>
 		</div>
-		<div class="topnav" id="myTopnav">
-			<a href="#home" >Home</a>
-			<a href="#news">News</a>
-			<a href="#contact">Contact</a>
-			<a href="#about">About</a>
-			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
-				<i class="fa fa-bars"></i>
-			</a>
-		</div>
-		<script>
-				function myFunction() {
-				  var x = document.getElementById("myTopnav");
-				  if (x.className === "topnav") {
-					x.className += " responsive";
-				  } else {
-					x.className = "topnav";
-				  }
-				}
-		</script>
+	</header>
+	
+	<script src="JS/menu.js"></script>
+	
 		<div class="contact">
 			<div class="contact-email">
 				<h3><a href="mailto:doman.interiores@gmail.com">doman.interiores@gmail.com</a></h3>
@@ -53,13 +63,42 @@
 			</div>
 		
 		</div>
+		<script>
+        function scrollToAbout() {
+            const aboutElement = document.getElementsByClassName('about-wrapper')[0];
+            if (aboutElement) {
+                aboutElement.scrollIntoView({ behavior: 'smooth' });
+            } else {
+                console.error('Element with class "about-wrapper" not found.');
+            }
+        }
+		</script>
+		
 		<div class="welcome-part">
 				<img src="Images/Gallery/1.jpg">
 				<div class="welcome-text">
 				<h1>Zmień swoje otoczenie już dzisiaj z Doman Interiores</h1>
-				<h3>Stwórz swoje unikalne wnętrze z nami</h3>
+				<button class="welcome-arrow" onclick="scrollToAbout()">
+				<span class="material-symbols-outlined">
+				keyboard_double_arrow_down
+				</span>
+				</button>
 				</div>
 		</div>
+		<div class="about-me">
+        <div class="about-me-text">
+            <h1>O mnie</h1>
+            <p>Nazywam się Jan Kowalski i jestem doświadczonym dekoratorem wnętrz. Moja pasja do tworzenia pięknych i funkcjonalnych przestrzeni zaczęła się wiele lat temu i od tego czasu miałem przyjemność pracować nad wieloma interesującymi projektami. Wierzę, że każde wnętrze powinno odzwierciedlać osobowość i styl życia jego właściciela, dlatego zawsze staram się, aby moje projekty były unikalne i dopasowane do indywidualnych potrzeb klientów.</p>
+        </div>
+        <div class="about-me-photo-wrapper">
+            <div class="photo-background">
+                <img src="Images/Gallery/7.jpg" alt="Background Photo">
+            </div>
+            <div class="photo-front">
+                <img src="Images/Gallery/autor.jpg" alt="Front Photo">
+            </div>
+        </div>
+    </div>
 		<div class="about-wrapper">
 		<div class="about">
 			<div class="left">
@@ -72,17 +111,80 @@
 			</div>
 		</div>
 		</div>
-		<div class="about">
-			<div class="right">
-				<img src="Images/Gallery/7.jpg">
-			</div>
-			<div class="left">
-			<h1>Dlaczego My?</h1>
-			<br>
-			<p>Nasz proces pracy opiera się na starannie zaplanowanej i zorganizowanej strategii, która zapewnia naszym klientom spokój i pewność, że ich wizje zostaną zrealizowane zgodnie z oczekiwaniami. Rozpoczynamy od szczegółowych konsultacji, podczas których starannie słuchamy Twoich potrzeb, preferencji i inspiracji. Następnie tworzymy spersonalizowany plan projektowy, uwzględniając Twój styl życia oraz funkcjonalne wymagania pomieszczeń. Nasz zespół dba o każdy etap procesu, od projektowania po finalne wykończenie, zapewniając wysoką jakość i doskonałe wykonanie. Naszym celem jest stworzenie dla Ciebie przestrzeni, w której poczujesz się naprawdę domowo i komfortowo, jednocześnie zachwycając się jej estetyką i funkcjonalnością.</p>
-			</div>
+		<div class="why-us-container">
+				<div class="why-us">
+					<div class="why-us-header">
+						<h1>Dlaczego My?</h1>
+					</div>
+					<div class="card-wrapper-why-us">
+						<div class="card-why-us">
+							<div class="card-content">
+								<div class="card-icon">
+									<span class="material-symbols-outlined">
+										arrow_drop_down
+									</span>
+								</div>
+								<p class="name-why-us">Indywidualne podejście</p>
+								<p class="description-why-us">Cos tam sdadasdaidjaoidjawidnwidn</p>
+								
+							</div>
+						</div>
+						<div class="card-why-us">
+							<div class="card-content">
+								<div class="card-icon">
+									<span class="material-symbols-outlined">
+										arrow_drop_down
+									</span>
+								</div>
+								<p class="name-why-us">20 lat doświaczenia</p>
+								<p class="description-why-us">Cos tam sdadasdaidjaoidjawidnwidn</p>
+								
+							</div>
+						</div>
+						<div class="card-why-us">
+							<div class="card-content">
+								<div class="card-icon">
+									<span class="material-symbols-outlined">
+										arrow_drop_down
+									</span>
+								</div>
+								<p class="name-why-us">Innowacyjne rozwiązania</p>
+								<p class="description-why-us">Cos tam sdadasdaidjaoidjawidnwidn</p>
+								
+							</div>
+						</div>
+					</div>
+				</div>
 		</div>
-		
+		<div class="container-holder">
+		<div class="container">
+			  <div class="slider-wrapper">
+				<button id="prev-slide" class="slide-button material-symbols-rounded">
+				  chevron_left
+				</button>
+				<ul class="image-list">
+				  <img class="image-item" src="Images/Gallery/7.jpg" alt="img-1" draggable="false"/>
+				  <img class="image-item" src="Images/Gallery/7.jpg" alt="img-2" draggable="false"/>
+				  <img class="image-item" src="Images/Gallery/7.jpg" alt="img-3" draggable="false"/>
+				  <img class="image-item" src="Images/Gallery/7.jpg" alt="img-4" draggable="false"/>
+				  <img class="image-item" src="Images/Gallery/7.jpg" alt="img-5" draggable="false"/>
+				  <img class="image-item" src="Images/Gallery/7.jpg" alt="img-6" draggable="false"/>
+				  <img class="image-item" src="Images/Gallery/7.jpg" alt="img-7" draggable="false"/>
+				  <img class="image-item" src="Images/Gallery/7.jpg" alt="img-8" draggable="false"/>
+				  <img class="image-item" src="Images/Gallery/7.jpg" alt="img-9" draggable="false"/>
+				  <img class="image-item" src="Images/Gallery/7.jpg" alt="img-10" draggable="false"/>
+				</ul>
+				<button id="next-slide" class="slide-button material-symbols-rounded">
+				  chevron_right
+				</button>
+			  </div>
+			  <div class="slider-scrollbar">
+				<div class="scrollbar-track">
+				  <div class="scrollbar-thumb"></div>
+				</div>
+			  </div>
+		</div>
+	</div>
 		<div class="slide-container">
 			<h1>Usługi</h1>
 			<div class="slide-content">
@@ -148,7 +250,7 @@
 							</div>
 						</div>
 						<div class="card-content">
-							<h2 class="name">Outsourcing</h2>
+							<h2 class="name">Outsourcing specjalistów</h2>
 							<p class="description">Współpraca z nami w zakresie outsourcingu pozwala Ci skupić się na swoich głównych celach, podczas gdy my zajmiemy się zarządzaniem projektem i koordynacją działań</p>
 						</div>
 					</div>
@@ -169,35 +271,7 @@
 			</div>
 		</div>
 		<!-- gallery -->
-	<div class="container-holder">
-		<div class="container">
-			  <div class="slider-wrapper">
-				<button id="prev-slide" class="slide-button material-symbols-rounded">
-				  chevron_left
-				</button>
-				<ul class="image-list">
-				  <img class="image-item" src="Images/Gallery/7.jpg" alt="img-1" draggable="false"/>
-				  <img class="image-item" src="Images/Gallery/7.jpg" alt="img-2" draggable="false"/>
-				  <img class="image-item" src="Images/Gallery/7.jpg" alt="img-3" draggable="false"/>
-				  <img class="image-item" src="Images/Gallery/7.jpg" alt="img-4" draggable="false"/>
-				  <img class="image-item" src="Images/Gallery/7.jpg" alt="img-5" draggable="false"/>
-				  <img class="image-item" src="Images/Gallery/7.jpg" alt="img-6" draggable="false"/>
-				  <img class="image-item" src="Images/Gallery/7.jpg" alt="img-7" draggable="false"/>
-				  <img class="image-item" src="Images/Gallery/7.jpg" alt="img-8" draggable="false"/>
-				  <img class="image-item" src="Images/Gallery/7.jpg" alt="img-9" draggable="false"/>
-				  <img class="image-item" src="Images/Gallery/7.jpg" alt="img-10" draggable="false"/>
-				</ul>
-				<button id="next-slide" class="slide-button material-symbols-rounded">
-				  chevron_right
-				</button>
-			  </div>
-			  <div class="slider-scrollbar">
-				<div class="scrollbar-track">
-				  <div class="scrollbar-thumb"></div>
-				</div>
-			  </div>
-		</div>
-	</div>
+	
 		
 		<div class="social-media">
 				<img src="Images/Icons/facebook.png">

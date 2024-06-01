@@ -8,26 +8,32 @@
 	background-color: #ddd0b1;
 	color: gray;
 	text-decoration: normal;
-	position: fixed;
-	width: 100%;
-	opacity: 1.0;
+	margin: 0px;
 	
 }
 
 .contact div {
-    margin: 10px;
     text-align: center;
 }
 
 .contact h3 {
     margin: 0;
 	text-align: center;
+	padding: 20px;
 	
 }
 .contact a:link{
 	text-decoration: none;
 	color: black;
 	font-weight: bold;
+	padding: 20px;
+	border: 1px solid transparent; /* Ustawienie początkowej granicy na przezroczystą */
+    transition: border-color 0.5s ease-in, border-width 0.5s ease-in;
+}
+.contact a:hover{
+	text-decoration: none;
+	font-weight: bold;
+	border: 1px solid black;
 }
 
 @media screen and (max-width: 600px) {
